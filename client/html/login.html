@@ -1,0 +1,64 @@
+<style>
+/*---loging form --*/
+.login{
+  text-align:center;
+  margin-left:0px;
+  margin-right:-25%;
+}
+
+.login  input[type="text"], input[type="password"]{
+	resize:none;
+        font-size:1.1em;
+        font-weight: 600;
+        padding:0.6em 1em;
+
+      
+
+}
+.login input[type="submit"]{
+	background:#e21737;
+	color:#fff;
+	font-size:1.1em;
+	border:none;
+	outline:none;
+	font-weight: 600;
+	padding:0.6em 1em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+        margin-right:12px
+}
+.login input[type="submit"]:hover{
+	background:#0b648f;
+	border: 1px solid;
+}
+</style>
+<form id="loginFrmm" name="loginFrm" method="post" enctype="multipart/form-data">
+                <input type="text" placeholder="Enter Your Email" id="txtLoginEmail" name="txtLoginEmail">
+                <input type="password" placeholder="Enter Your Password"id="txtLoginPassword" name="txtLoginPassword">
+<input type="submit" name="btnLogin" id="btnLogin" value="Login" onclick="return validateme();"/><input type="submit" name="btnRegister" id="btnRegister" value="Register"/></form>
+<strong><?php echo $_SESSION['usertype'];?></strong>
+
+
+                
+<script language="javascript">
+	function validateme()
+	{
+		if(document.loginFrm.txtLoginEmail.value=="")	
+		{
+			alert("Please Provide the Email!");
+			document.loginFrm.txtemail.focus();
+
+			return false;
+		}
+		if(document.loginFrm.txtLoginPassword.value=="")	
+		{
+			alert("Please Provide the Password!");
+			document.loginFrm.txtpassword.focus();
+			return false;
+		}
+		
+	return true;
+	}
+</script>

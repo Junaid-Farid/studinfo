@@ -1,0 +1,156 @@
+<style>
+/** page structure **/
+#contentPro {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 0px;
+  margin: 60px 60px;
+}
+#contentPro p{
+line-height: 2.7em;
+	}
+
+#userphoto {
+  display: block;
+  float: right;
+  margin-left: 14px;
+  margin-bottom: 8px;
+}
+#userphoto img {
+  display: block;
+  padding: 2px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+
+/** profile nav links **/
+#profiletabs {
+  display: block;
+  margin-bottom: 4px;
+  height: 50px;
+}
+
+#profiletabs ul { list-style: none; display: block; width: 75%; height: 50px; }
+#profiletabls ul li { float: left; }
+#profiletabs ul li a { 
+  display: block;
+  float: left;
+  padding: 8px 11px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: #eae8db;
+  color: #666;
+  margin-right: 7px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-bottomleft: 0;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+}
+#profiletabs ul li a:hover {
+  text-decoration: none;
+  background: #dad7c2;
+  color: #565656;
+}
+
+#profiletabs ul li a.sel {
+  background: #fff;
+  border-color: #d1cdb5;
+}
+
+
+/** profile contentPro sections **/
+.hidden {
+  display: none;
+}
+
+.activity {
+  border-bottom: 1px solid #d6d1af;
+  padding-bottom: 4px;
+}
+
+.settings {
+  display: block;
+  font-weight: normal;
+  padding: 7px 3px;
+  border-top: 1px solid #d6d1af;
+  margin-bottom: 5px;
+}
+.settings span {
+  float: left; 
+  width: 250px;
+  font-weight: bold;
+}
+.settings span img { 
+  cursor: pointer;
+}
+
+
+#friendslist {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#friendslist li { line-height: 30px; float:left; margin:13px; }
+#friendslist li a {
+  float: left;
+  height: 30px;
+  padding: 3px 6px;
+  line-height: 22px;
+   margin-right: 15px;
+  border: 1px solid #c9d8b8;
+}
+
+#friendslist li a img { float: left; margin-right: 5px; }
+
+/** clearfix **/
+
+
+</style>
+  <div id="w">
+    <div id="contentPro" class="clearfix">
+    
+     
+      
+      <h1>Profile </h1>
+      <br/>
+
+      <nav id="profiletabs">
+        <ul class="clearfix">
+         
+        </ul>
+        
+      </nav>
+      
+      
+      
+      
+      
+      
+      
+      <section id="settingss">
+        
+        <p class="settings"><span>Name </span> <?php echo $name; ?></p>
+        
+        <p class="settings"><span>guardian </span> <?php echo $guardian; ?></p>
+        
+        <p class="settings"><span>Email</span> <?php echo $email; ?> </p>
+        
+        <p class="settings"><span>Contact</span> <?php echo $contact;?></p>
+        
+        <p class="settings"><span>Department </span> <?php echo $dept_name;?></p>
+        
+        <p class="settings"><span>Program </span> <?php echo $course_name;?></p>
+        
+        <p class="settings"><span>Session </span> <?php echo $session;?></p>
+        
+        <p class="settings"><span>Semester </span> <?php echo $semester;?></p>
+        
+      </section>
+    </div><!-- @end #content --><!-- @end #w -->
+

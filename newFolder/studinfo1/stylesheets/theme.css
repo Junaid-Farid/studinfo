@@ -1,0 +1,530 @@
+/**
+* Desciption:	CSS file for admin theme "arbama".
+*				Default frontend theme for china inventory project.
+* Author:		Alrex D. Consus
+* Date Created:	November 12, 2008
+* Revised by:
+*/
+
+/*Global reset*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin:0.5em 0; } 
+li, dd { margin-left:1em; } 
+fieldset { padding: .5em; }
+/*Global reset*/
+
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+#titlebar_m {
+	background: url(../image/title_bar_middle_bg.jpg) repeat-x;
+	height: 35px;
+	border-bottom: 1px solid #98CD36;
+	overflow: hidden;
+}
+
+#titlebar_r {
+	background: url(../image/title_bar_right_bg.jpg) top right no-repeat;
+	height: 100%;
+	overflow: hidden;
+}
+
+#titlebar_l {
+	background: url(../image/title_bar_left_bg.jpg) top left no-repeat;
+	height: 100%;
+	overflow: hidden;
+}
+
+#titlebar_frame {
+	height: 100%;
+}
+
+#system-title {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	text-indent: 70px;
+}
+
+#menubar {
+	background: #F1FDDB url(../image/menu_bar_bg.jpg)left center no-repeat;
+
+	
+	border-bottom: 1px solid #E0E3CC;
+	height: 24px;
+	color: #333333;
+}
+
+#module-name {
+	color: #FB8E2D;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 7px 15px;
+}
+
+#module-name small {
+	color: #FACC2E;
+}
+
+#content {
+	margin: 0px 15px;
+	margin-bottom: 10px;
+}
+
+#content2 {
+	margin: 2px;
+}
+
+#footer-container {
+	overflow: hidden;
+}
+
+#footer {
+	width: 270px;
+	height: 50px;
+	background: url(../image/footer_middle_bg.jpg) repeat-x;
+	float: right;
+	overflow: hidden;
+}
+
+#footer_l {
+	height: 100%;
+	background: url(../image/footer_left_bg.jpg) top left no-repeat;
+	overflow: hidden;
+}
+
+#footer_r {
+
+	height: 100%;
+	background: url(../image/footer_right_bg.jpg) top right no-repeat;
+	overflow: hidden;
+	color: #FFFFFF;
+}
+
+#footer_r table {
+	
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+/*Standard CSS for the System*/
+#welcome-and-logout {
+	margin-right: 15px;
+}
+
+#welcome-user {
+	color:#FFFFFF;
+	font-size: 12px;
+}
+
+a#logout-button {
+	display: block;
+	height: 22px;
+	width: 72px;
+	background: url(../image/logout_button_bg.jpg) no-repeat;
+	line-height: 20px;
+	text-indent: 28px;
+	text-align: left;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a#logout-button:hover {
+	background-position: 0px -22px;
+}
+
+#warning-msg {
+	border: 1px solid #E08381;
+	/*background-color: #EFDADA;*/
+	padding: 4px;
+	color: #CC0000;
+	background: #EFDADA url(../image/login-warning.png) no-repeat;
+	background-position: 4px 3px;
+	text-indent: 20px;
+}
+
+#success-msg {
+}
+
+
+/*Standard Element CSS*/
+.app_txtbox {
+	border: 1px solid #DFDFDF;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	padding: 2px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.app_selectbox {
+	font-size: 11px;
+	padding: 0px;
+}
+
+table.app_table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+	border: 1px solid #E0E0E0;
+}
+
+table.app_table th {
+	height: 25px;
+	background: url(../image/table_header_bg.jpg) repeat-x;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+
+/*----------*/
+
+table.app_table th .app_sort_asc_icon {
+	background: url(../image/sort_asc.png) top center no-repeat;
+	height: 22px;
+	line-height: 21px;
+}
+
+table.app_table th .app_sort_desc_icon {
+	background: url(../image/sort_desc.png) top center no-repeat;
+	height: 22px;
+	line-height: 21px;
+}
+
+table.app_table th .app_sort_asc_icon a, table.app_table th .app_sort_desc_icon a, table.app_table th a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+table.app_table th a:hover {
+	text-decoration: underline;
+}
+
+/*----------*/
+
+
+table.app_table th ._title {
+	height: 20px;
+	background: url(../image/table_header_title_bullet.jpg) left center no-repeat;
+	margin-left: 5px;
+	line-height: 20px;
+	text-indent: 20px;
+	text-align: left;
+}
+
+table.app_table td.form {
+	background-color: #F7F7F7;
+	padding: 3px;
+}
+
+td._label {
+	text-align: right;
+	padding-right: 8px;
+}
+
+td._counter {
+	color: #999999;
+}
+
+tr.row1 {
+	background-color: #F2F2F2;
+}
+
+tr.row0 {
+	background-color: #F7F7F7;
+}
+
+tr.row1 td, tr.row0 td {
+	border-top: 1px solid #FFFFFF;
+	padding: 3px 0px;
+}
+
+.app_field_infotext {
+	color: #999999;
+	font-size: 10px;
+}
+
+a.app_listitem_key {
+	color: #709922;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.app_success-msg {
+	background: #CADFF4 url(../image/notice_info.png) no-repeat;
+	background-position: 2px 2px;
+	border: 1px solid #67A4E0;
+	color: #1E5791;
+}
+
+.app_warning-msg {
+	background: #EEC1C9 url(../image/notice_warning.png) no-repeat;
+	background-position: 2px 2px;
+	border: 1px solid #DA7889;
+	color: #96293D;
+	
+}
+
+.app_success-msg, .app_warning-msg {
+	margin: 10px 5px;
+	margin-bottom: 10px;
+	padding: 5px 5px;
+	/*text-align: center;*/
+	font-weight: bold;
+	text-indent: 20px;
+}
+
+.app_img_button {
+	vertical-align: middle;
+}
+
+.cursor_pointer {
+	cursor: pointer;
+}
+
+/*System Button*/
+.app_button_container_86 {
+	width: 86px;
+}
+
+.app_button_container_90 {
+	width: 90px;
+}
+
+.app_button_container_100 {
+	width: 100px;
+}
+
+.app_button_container_86, .app_button_container_90, .app_button_container_100 {
+	height: 21px;
+	background: url(../image/task_button_bg.jpg) repeat-x;
+	overflow: hidden;
+}
+
+.app_button_container_86 .app_button_left, .app_button_container_90 .app_button_left, .app_button_container_100 .app_button_left {
+	height: 100%;
+	background: url(../image/task_button_left_bg.jpg) top left no-repeat;
+	overflow: hidden;
+}
+
+.app_button_container_86 .app_button_right, .app_button_container_90 .app_button_right, .app_button_container_100 .app_button_right {
+	height: 100%;
+	background: url(../image/task_button_right_bg.jpg) top right no-repeat;
+	overflow: hidden;
+}
+.app_button_container_86 a, .app_button_container_90 a, .app_button_container_100 a {
+	display: block;
+	text-decoration: none;
+	color: #709922;
+	line-height: 20px;
+	text-align: center;
+}
+
+
+.app_button2_container {
+	height: 21px;
+	width: 100px;
+	background: url(../image/task_button_bg.jpg) repeat-x;
+	overflow: hidden;
+}
+
+.app_button2_container .app_button2_left {
+	height: 100%;
+	background: url(../image/task_button_left_bg.jpg) top left no-repeat;
+	overflow: hidden;
+}
+.app_button2_container .app_button2_right {
+	height: 100%;
+	background: url(../image/task_button_right_bg.jpg) top right no-repeat;
+	overflow: hidden;
+	text-align: center;
+}
+.app_button2_container .app_button2 {
+	background: #FFFFFF url(../image/task_button2_bg.jpg) repeat-x;
+	border: 0px solid #FFFFFF;
+	color: #709922;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 0px;
+	width: 94px;
+	margin: 0 auto;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+
+
+/*List Navigation Bar*/
+.app_navbar_container {
+	margin: 0px auto; 
+	width:390px;
+}
+
+.app_navbar_container_m {
+	background: url(../image/nav_cont_middle.jpg) repeat-x;
+	height: 23px;
+	overflow: hidden;
+}
+
+.app_navbar_container_l {
+	background: url(../image/nav_cont_left.jpg) top left no-repeat;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.app_navbar_container_r {
+	background: url(../image/nav_cont_right.jpg) top right no-repeat;
+	height: 100%;
+	overflow: hidden;
+}
+
+.app_nav_button_container {
+	height: 100%;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.app_nav_button_left {
+	background: url(../image/nav_button_sep.jpg) center left no-repeat;
+}
+
+.app_nav_button_right {
+	background: url(../image/nav_button_sep.jpg) center right no-repeat;
+}
+
+.app_nav_button_left, .app_nav_button_right {
+	width: 70px;
+	text-align: center;
+}
+
+a.app_nav_button_active {
+	color: #709922;
+}
+
+a.app_nav_button_inactive {
+	color: #999999;
+	cursor: default;
+}
+
+a.app_nav_button_active, a.app_nav_button_inactive {
+	display: block;
+	text-decoration: none;
+}
+
+.app_page_info {
+	width: 100px;
+	text-align: center;
+}
+
+
+/*List Navigation Bar for Popup*/
+.app_navbar_container_popup {
+	margin: 0px auto; 
+	width: 390px;
+}
+
+.app_navbar_container_popup_m {
+	background: url(../image/nav_cont_popup_middle.jpg) repeat-x;
+	height: 23px;
+	overflow: hidden;
+}
+
+.app_navbar_container_popup_l {
+	background: url(../image/nav_cont_popup_left.jpg) top left no-repeat;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.app_navbar_container_popup_r {
+	background: url(../image/nav_cont_popup_right.jpg) top right no-repeat;
+	height: 100%;
+	overflow: hidden;
+}
+
+.app_nav_button_popup_left {
+	/*background: url(../image/nav_button_sep.jpg) center left no-repeat;*/
+}
+
+.app_nav_button_popup_right {
+	/*background: url(../image/nav_button_sep.jpg) center right no-repeat;*/
+}
+
+.app_nav_button_popup_left, .app_nav_button_popup_right {
+	width: 30px;
+	text-align: center;
+}
+
+.app_page_info_popup {
+	width: 60px;
+	text-align: center;
+}
+
+/*********************************************************************************/
+
+
+/*Login Screen CSS*/
+#login-container {
+	width: 305px;
+	margin-left: 70px;
+	overflow: hidden;
+	background: url(../image/login/container_middle_bg.jpg) repeat-y;
+	margin-bottom: 20px;
+}
+
+#login-container_b {
+	height: 100%;
+	overflow: hidden;
+	background: url(../image/login/container_bottom_bg.jpg) left bottom no-repeat;
+}
+
+#login-container-bg {
+	height: 100%;
+	overflow: hidden;
+	background: url(../image/login/conainter_bg.jpg) no-repeat;
+	background-position: 1px 0px;
+}
+
+#login-container-inner {
+	overflow: hidden;
+	margin: 16px;
+}
+
+#login-form-container {
+	border: 1px solid #DBF2B3;
+	background-color: #F5FBEA;
+	padding: 6px;
+	margin-top: 5px;
+}
+
+#welcome-msg {
+	background: url(../image/login/login_icon.jpg) no-repeat;
+	background-position: 2px 5px;
+	height: 128px;
+	overflow: hidden;
+	margin-bottom: 2px;
+	
+}
+#welcome-msg div {
+	color: #618420;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 110px;
+	margin-top: 95px;
+}
+
+.app_login_button {
+	border: 1px solid #93D616;
+	background: url(../image/button_bg.jpg) repeat-x;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 4px 8px;
+}
